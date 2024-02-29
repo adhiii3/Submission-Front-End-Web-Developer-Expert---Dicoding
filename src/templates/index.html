@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free Restaurant catalogue for you">
+  <meta name="theme-color" content="#42ADFF"/>
+  <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/b070c8f1df.js"></script>
+  <title>Restaurant App</title>
+</head>
+<body>
+  <a href="#mainContent" class="skip-link"><b>Menuju ke konten</b></a>
+  <header class="app-bar">
+    <div class="app-bar__menu">
+      <button id="hamburgerButton">☰</button>
+    </div>
+    <div class="app-bar__brand">
+      <h1>My Restaurants</h1>
+    </div>
+    <nav id="navigationDrawer" class="app-bar__navigation">
+      <ul>
+        <li><a href="#/home">Home</a></li>
+        <li><a href="#/like">Favorite</a></li>
+        <li><a href="https://github.com/praseee">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="banner">
+    <picture>
+
+      <source media="(max-width: 480px)" srcset="./images/hero-image_4-small.webp" type="image/webp">
+      <source media="(max-width: 700px)" srcset="./images/hero-image_4-medium.webp" type="image/webp">
+      <source media="(max-width: 900px)" srcset="./images/hero-image_4-large.webp" type="image/webp">
+
+      <source media="(max-width: 480px)" srcset="./images/hero-image_4-small.jpg" type="image/jpeg">
+      <source media="(max-width: 700px)" srcset="./images/hero-image_4-medium.jpg" type="image/jpeg">
+      <source media="(max-width: 900px)" srcset="./images/hero-image_4-large.jpg" type="image/jpeg">
+      <img 
+          src='./images/hero-image_4-x_large.jpg' 
+          alt="hero-image4"></img>
+  
+    </picture>
+    <div class="banner__inner">
+        <h2 class="banner__title">Pilih Restaurant Sesuai Keinginan Anda</h2>
+        <p class="banner__tagline">Kami menyajikan restaurant dengan kualitas terbaik </p>
+    </div>
+  </div>
+
+  <main id="mainContent"></main>
+  <footer>
+    <p>Copyright &#169; 2021 - MyRestaurants</p>
+  </footer>
+</body>
+</html>
